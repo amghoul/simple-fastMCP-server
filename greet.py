@@ -14,4 +14,5 @@ async def greet_user(name:str) -> str:
     return f"Hello {name}, how are you today?"
 
 if __name__ == "__main__":
-    server.run(transport="stdio")
+    #server.run(transport="stdio")
+    server.run(transport="sse")
